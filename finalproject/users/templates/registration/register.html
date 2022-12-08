@@ -1,0 +1,28 @@
+{% extends '../base_login.html' %}
+{% block title %}Registrarse{% endblock %}
+{% block content %}
+<a href="{% url 'login' %}" class="btn btn-primary mt-3">Regresar</a>
+<body>
+    <div class="mt-5">
+        <div class="card" style="width: 60%; margin: auto; color: rgb(15, 14, 14);">
+            <div class="card-body">
+                <h2 style="text-align: center; font-family: Impact;">Regístrate</h2>
+                <form method="post" novalidate>
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Crear Usuario</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const inputs = document.querySelectorAll("input");
+    inputs.forEach((input) => {
+        input.classList.add("form-control");
+    });
+</script>
+
+{% endblock content %}
