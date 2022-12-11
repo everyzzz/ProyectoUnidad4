@@ -5,14 +5,13 @@ from application.models import FormData
 from application.forms import FormAfterLogin
 
 
-class Index(LoginRequiredMixin, TemplateView):
+class Index(TemplateView):
     extra_context = {"form": FormData.objects.all()}
     template_name = "index.html"
 
     def get_context_data(self):
         context= {}
         context["form"] = FormData.objects.all()
-        
         return context
 
 

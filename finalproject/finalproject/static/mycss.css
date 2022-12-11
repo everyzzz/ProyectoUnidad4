@@ -1,0 +1,184 @@
+/*----------Login----------*/
+#login {
+  font-size: 18px;
+  color:#ffffff;
+  border: solid 1px #149ddd;
+  border-radius: 15px;
+  padding: 8px;
+  background: #149ddd;
+  font-family: 'Raleway';  
+  font-weight: 900;
+}
+
+#login:hover {
+  font-size: 18px;
+  color:#149ddd;
+  border: solid 1px #149ddd;
+  border-radius: 15px;
+  padding: 8px;
+  background: #ffffff;
+  font-family: 'Raleway';
+  font-weight: 900;
+}
+
+#logout{
+  font-size: 15px;
+  color:white;
+  text-decoration: underline;
+}
+
+
+/*----------Profile Photo----------*/
+#fondo {
+    width: auto;
+    height: auto;
+    padding-left : 120px;
+    padding-top: 300px;
+    background: url("../static/img/fondo2.png") top center;
+    background-size: cover;
+}
+
+
+#fondo h1 {
+  margin: 0 0 10px 0;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+#fondo p {
+  color: #fff;
+  margin-bottom: 50px;
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+}
+
+#fondo p span {
+  color: #fff;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #149ddd;
+}
+
+@media (min-width: 1024px) {
+  #fondo {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #fondo h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #fondo h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+
+
+/*----------Sections----------*/
+#section_title{
+    font-family:'Franklin Gothic Medium';
+    font-size: 40px;
+    color:#040b14;
+}
+
+
+
+/*----------Section Projects Container----------*/
+#project-container{
+    border: solid 1px; 
+    border-radius: 15px;
+    width: 50%;
+    text-align: center; 
+}
+
+/*----------Section Projects----------*/
+#add_project{
+    color: white; 
+    font-size: 20px;
+    font-family: 'Raleway';
+    font-weight: 900;
+    border: solid 1px;
+    border-radius: 15px;
+    background-color: #040b14;
+    padding: 10px;
+}
+#add_project:hover{
+    color: #040b14; 
+    font-size: 20px;
+    font-family: 'Raleway';
+    font-weight: 900;
+    border: solid 1px;
+    border-radius: 15px;
+    background-color: white;
+    padding: 10px;
+}
+
+#not_add_project{
+    color: rgb(0, 153, 255); 
+    font-size: 25px;
+    font-family: 'Raleway';
+    font-weight: 900;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+#not_add_project:hover{
+  color: rgb(255, 0, 0); 
+  font-size: 25px;
+  font-family: 'Raleway';
+  font-weight: 900;
+  padding: 10px;
+  text-decoration: underline;
+}
+
+#not_add_project_text{
+    color: rgb(2, 0, 0); 
+    font-size: 25px;
+    font-family: 'Raleway';
+    font-weight: 900;
+    padding: 10px;
+}
+
+
+#title{
+    font-size: 25;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 10px;
+}
+
+#image_project{
+    width: 50%;
+    padding: 10px;
+}
+
+#description{
+    font-size: 20px;
+    font-family: 'Raleway';
+}
+
+#tags{
+    font-size: 20px;
+    font-family: 'Raleway';
+}
+
+#git{
+    color:#040b14;
+    font-size: 30px;
+    font-family: 'Raleway';
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+#git_fail{
+    color:red;
+    font-size: 18px;
+    font-family: 'Raleway';
+}

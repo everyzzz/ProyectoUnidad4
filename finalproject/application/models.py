@@ -9,3 +9,10 @@ class FormData(models.Model):
 
     class Meta:
         db_table = "formulario_proyecto"
+
+class ip(models.Model):
+    ip = models.CharField(max_length=20)
+    last_connection = models.DateTimeField(auto_now=True)
+    
+    class Meta:
+        db_table = "ip_table"

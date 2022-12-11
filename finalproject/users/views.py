@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from users.forms import CreateUser
-from django.views.generic import CreateView
+from django.views.generic import CreateView, TemplateView
 
 class RegisterView(CreateView):
     template_name = "registration/register.html"

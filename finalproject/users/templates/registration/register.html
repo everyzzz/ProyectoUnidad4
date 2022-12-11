@@ -1,17 +1,26 @@
 {% extends '../base_login.html' %}
 {% block title %}Registrarse{% endblock %}
 {% block content %}
-<a href="{% url 'login' %}" class="btn btn-primary mt-3">Regresar</a>
+<style>
+    #boton{
+        font-size: 30px ;background-color: #ffffff; border: 1px solid #040b14; color: #040b14; font-family: Impact;
+    }
+    #boton:hover{
+        font-size: 30px ;background-color: #040b14; border: 1px solid #ffffff; color: #ffffff; font-family: Impact;
+    }
+</style>
+
+<a href="{% url 'login' %}" class="btn btn-dark btn-lg btn-block mt-2" style="background-color: #040b14;">Regresar</a>
 <body>
     <div class="mt-5">
-        <div class="card" style="width: 60%; margin: auto; color: rgb(15, 14, 14);">
+        <div class="card" style="width: 60%; margin: auto; color: white; background-color: #040b14;">
             <div class="card-body">
-                <h2 style="text-align: center; font-family: Impact;">Regístrate</h2>
+                <h2 style="text-align: center;font-size: 40px; font-family: Impact;">Regístrate</h2>
                 <form method="post" novalidate>
                     {% csrf_token %}
                     {{ form.as_p }}
                     <div class="d-grid">
-                        <button type="submit" class="btn btn-primary">Crear Usuario</button>
+                        <button type="submit" class="btn btn-dark btn-lg btn-block" id="boton">Crear Usuario</button>
                     </div>
                 </form>
             </div>
