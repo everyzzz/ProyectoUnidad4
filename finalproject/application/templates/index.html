@@ -88,8 +88,7 @@
               </div>
             </div>
             <p>
-              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+              
             </p>
           </div>
         </div>
@@ -123,7 +122,7 @@
                 <strong>Descripción:</strong>
                 <br>{{i.description}} 
               </p>
-              <p id="tags"><strong>Lenguajes:</strong>
+              <p id="tags"><strong>Tags:</strong>
                 <br> {{i.tags}}</p>
 
                 {% if 'https://github.com/' not in i.url_github %}
@@ -183,6 +182,8 @@
 
           </div>
 
+
+
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
@@ -204,13 +205,11 @@
                 <textarea class="form-control" name="message" rows="10" required></textarea>
               </div>
               <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Tu mensaje ha sido enviado, ¡Gracias!</div>
               </div>
-              <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
+              <div class="text-center"><button onclick="myalert()" type="submit">Enviar Mensaje</button></div>
             </form>
           </div>
+
 
         </div>
 
@@ -256,5 +255,10 @@
             <a href="{% url 'form' %}">Agregar Nuevo Proyecto</a>
           </div> -->
 </body>
+<script>
+  function myalert() {
+      alert("¡Enviado!");
+  }
+</script>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 {% endblock content %}

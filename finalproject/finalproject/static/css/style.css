@@ -964,8 +964,8 @@ section {
   margin: 0 10px -6px 0;
   border: 3px solid #18d26e;
   border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
+  animation: animate-loading;
+  animation-duration : 1s;
 }
 
 .contact .php-email-form .form-group {
