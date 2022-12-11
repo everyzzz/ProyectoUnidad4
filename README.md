@@ -1,6 +1,6 @@
 # ProyectoUnidad4
-<h4>Funcionalidades a desarrollar</h4><br>
-Creación de formulario con los siguientes campos:<br>
+<h3>Funcionalidades a desarrollar</h3>
+<h4>Creación de formulario con los siguientes campos:</h4>
 
 Foto (que puede ser una URL)<br>
 Título del proyecto<br>
