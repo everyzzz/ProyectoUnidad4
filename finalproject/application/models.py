@@ -11,7 +11,7 @@ class FormData(models.Model):
         db_table = "formulario_proyecto"
 
 class ip(models.Model):
-    ip = models.CharField(max_length=20)
+    ip = models.CharField(max_length=200)
     last_connection = models.DateTimeField(auto_now=True)
     
     class Meta:

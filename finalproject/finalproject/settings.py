@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-=eif^1m*_paht617330!^rc%lt!mn+pee_dicrp2(#1g3j*gac
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -55,6 +55,9 @@ MIDDLEWARE = [
     'application.middleware.IpIsValid',
 
 ]
+
+# Para el ngrok
+CSRF_TRUSTED_ORIGINS=['https://14e8-38-25-75-245.sa.ngrok.io']
 
 ROOT_URLCONF = 'finalproject.urls'
 
